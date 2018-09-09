@@ -20,17 +20,17 @@ Using :
 then we dump the existing method with:
 
 ```
-m.setName("dump");
+        m.setName("dump");
 ```
 
 now add another method from same file :
 
 ```
-  CtMethod method = CtNewMethod.make(
+        CtMethod method = CtNewMethod.make(
                 "public void say() { int a=1,b=2; System.out.println(\"1 + 2 = \" + a*b); }",
                 cc);
                
-  cc.addMethod(method);
+        cc.addMethod(method);
 ```
 
 and... you are ready to go:
